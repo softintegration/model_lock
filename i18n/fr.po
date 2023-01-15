@@ -1,0 +1,38 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* model_lock
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-01-15 16:42+0000\n"
+"PO-Revision-Date: 2023-01-15 16:42+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: model_lock
+#: code:addons/model_lock/models/model_lock_class.py:0
+#: code:addons/model_lock/models/model_lock_class.py:0
+#, python-format
+msgid "%s is locked,Can not update/remove locked record"
+msgstr "%s est verrouillé, impossible de mettre à jour/supprimer un enregistrement verrouillé"
+
+#. module: model_lock
+#: model:ir.model.fields,field_description:model_lock.field_model_lock_class__locked
+msgid "Locked"
+msgstr "Verrouillé"
+
+#. module: model_lock
+#: model:ir.model,name:model_lock.model_model_lock_class
+msgid "Model lock class"
+msgstr ""
+
+#. module: model_lock
+#: model:ir.model,name:model_lock.model_ir_ui_view
+msgid "View"
+msgstr "Vue"
