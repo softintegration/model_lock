@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*- 
 
-from odoo import models, fields, api, _
+from odoo import models, fields, _
 from odoo.exceptions import ValidationError
 
 
@@ -27,7 +27,7 @@ class ModelLockClass(models.AbstractModel):
 
     def write(self, vals):
         for each in self:
-            if each.locked and not each.env.context.get('force_update',False):
+            if each.locked and not each.env.context.get('force_update',False) and not each.env.su:
                 raise ValidationError(_("%s is locked,Can not update/remove locked record")%each._description)
         return super(ModelLockClass,self).write(vals)
 
